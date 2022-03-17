@@ -38,7 +38,7 @@ export default function BlogPostTemplate({
               <title>
                 {post.title}
                 {' '}
-                | Lorenzo GM
+                | Joe Rickicki
               </title>
               <meta property="og:image" content={post.coverImage.url} />
             </Head>

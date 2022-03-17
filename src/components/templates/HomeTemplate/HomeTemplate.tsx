@@ -25,7 +25,7 @@ export default function HomeTemplate({
           />
           <div className="mt-5 text-center lg:text-left lg:mr-20">
             <p className="text-4xl">Joe Rickicki.</p>
-            <p className="text-2xl">Information.</p>
+            <p className="text-2xl">Information2.</p>
             <div className="mt-6">
               <Link href="/blog">
                 <a
