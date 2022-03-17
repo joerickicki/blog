@@ -1,0 +1,3 @@
+space import –-content-file "contentful\export.json" –-space-id takj4t1rfm9z 
+
+contentful login --management-token CFPAT-tsyNjpqc31AFwc-Ogmq2q6JLiQtYdbEvIcNJAee46VE
