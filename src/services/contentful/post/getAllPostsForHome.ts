@@ -1,5 +1,6 @@
-import getPostEntries from 'services/contentful/post/getPostEntries'
-import { PostParsed } from './postParser'
+import getPostEntries from 'services/contentful/post/getPostEntries';
+
+import { PostParsed } from './postParser';
 
 export default async function getAllPostsForHome(
   preview: boolean,
@@ -9,7 +10,7 @@ export default async function getAllPostsForHome(
     query: {
       order: '-fields.date',
     },
-  })
+  });
 
-  return entries
+  return entries;
 }

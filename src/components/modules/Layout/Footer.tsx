@@ -1,6 +1,6 @@
-import Container from 'components/foundations/PageContainer/PageContainer'
-import Navigation from 'components/elements/Navigation/Navigation'
-import { ReactElement } from 'react'
+import Navigation from 'components/elements/Navigation/Navigation';
+import Container from 'components/foundations/PageContainer/PageContainer';
+import { ReactElement } from 'react';
 
 export default function Footer(): ReactElement {
   return (
@@ -14,5 +14,5 @@ export default function Footer(): ReactElement {
         </div>
       </Container>
     </footer>
-  )
+  );
 }

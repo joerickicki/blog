@@ -1,9 +1,9 @@
-import { format } from 'date-fns'
-import { ReactElement } from 'react'
+import { format } from 'date-fns';
+import { ReactElement } from 'react';
 
 type DateFormatProps = {
   dateString: string
-}
+};
 export default function DateFormat({
   dateString,
 }: DateFormatProps): ReactElement {
@@ -11,5 +11,5 @@ export default function DateFormat({
     <time dateTime={dateString}>
       {format(new Date(dateString), 'LLLL	d, yyyy')}
     </time>
-  )
+  );
 }

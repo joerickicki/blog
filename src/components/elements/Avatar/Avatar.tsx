@@ -1,9 +1,9 @@
-import { ReactElement } from 'react'
-import { AuthorParsed } from 'services/contentful/author/authorParser'
+import { ReactElement } from 'react';
+import { AuthorParsed } from 'services/contentful/author/authorParser';
 
 type AvatarProps = {
   author: AuthorParsed
-}
+};
 export default function Avatar({ author }: AvatarProps): ReactElement {
   return (
     <div className="flex items-center">
@@ -14,5 +14,5 @@ export default function Avatar({ author }: AvatarProps): ReactElement {
       />
       <div className="text-xl font-bold">{author.name}</div>
     </div>
-  )
+  );
 }

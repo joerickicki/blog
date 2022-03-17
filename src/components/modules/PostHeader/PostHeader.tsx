@@ -1,14 +1,13 @@
-import { ReactElement } from 'react'
-
-import Avatar from 'components/elements/Avatar/Avatar'
-import DateFormat from 'components/foundations/DateFormat/DateFormat'
-import PostCoverImage from 'components/elements/PostCoverImage/PostCoverImage'
-import PostTitle from 'components/elements/PostTitle/PostTitle'
-import { PostParsed } from 'services/contentful/post/postParser'
+import Avatar from 'components/elements/Avatar/Avatar';
+import PostCoverImage from 'components/elements/PostCoverImage/PostCoverImage';
+import PostTitle from 'components/elements/PostTitle/PostTitle';
+import DateFormat from 'components/foundations/DateFormat/DateFormat';
+import { ReactElement } from 'react';
+import { PostParsed } from 'services/contentful/post/postParser';
 
 type PostHeaderProps = {
   post: PostParsed
-}
+};
 export default function PostHeader({ post }: PostHeaderProps): ReactElement {
   return (
     <>
@@ -28,5 +27,5 @@ export default function PostHeader({ post }: PostHeaderProps): ReactElement {
         </div>
       </div>
     </>
-  )
+  );
 }

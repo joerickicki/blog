@@ -1,11 +1,12 @@
-import { Asset, Entry } from 'contentful'
-import { IPostFields } from 'types/generated/contentful'
-import authorParser, { AuthorParsed } from '../author/authorParser'
-import imageParser from '../image/imageParser'
+import { Asset, Entry } from 'contentful';
+import { IPostFields } from 'types/generated/contentful';
+
+import authorParser, { AuthorParsed } from '../author/authorParser';
+import imageParser from '../image/imageParser';
 
 export type PostParsed = Omit<IPostFields, 'coverImage' | 'author'> & {
   coverImage: Asset['fields']['file']
-} & { author: AuthorParsed }
+} & { author: AuthorParsed };
 
 export default function postParser({ fields }: Entry<IPostFields>): PostParsed {
   return {
@@ -18,5 +19,5 @@ export default function postParser({ fields }: Entry<IPostFields>): PostParsed {
     // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     // @ts-ignore
     author: authorParser(fields.author),
-  }
+  };
 }

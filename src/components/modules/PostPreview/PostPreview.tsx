@@ -1,13 +1,12 @@
-import Link from 'next/link'
-import { ReactElement } from 'react'
-
-import DateFormat from 'components/foundations/DateFormat/DateFormat'
-import PostCoverImage from 'components/elements/PostCoverImage/PostCoverImage'
-import { PostParsed } from 'services/contentful/post/postParser'
+import PostCoverImage from 'components/elements/PostCoverImage/PostCoverImage';
+import DateFormat from 'components/foundations/DateFormat/DateFormat';
+import Link from 'next/link';
+import { ReactElement } from 'react';
+import { PostParsed } from 'services/contentful/post/postParser';
 
 type PostPreviewProps = {
   post: PostParsed
-}
+};
 
 export default function PostPreview({ post }: PostPreviewProps): ReactElement {
   return (
@@ -25,5 +24,5 @@ export default function PostPreview({ post }: PostPreviewProps): ReactElement {
       </div>
       <p className="text-lg leading-relaxed mb-4">{post.excerpt}</p>
     </div>
-  )
+  );
 }

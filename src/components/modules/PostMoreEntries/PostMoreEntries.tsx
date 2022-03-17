@@ -1,11 +1,10 @@
-import { ReactElement } from 'react'
-
-import PostPreview from 'components/modules/PostPreview/PostPreview'
-import { PostParsed } from 'services/contentful/post/postParser'
+import PostPreview from 'components/modules/PostPreview/PostPreview';
+import { ReactElement } from 'react';
+import { PostParsed } from 'services/contentful/post/postParser';
 
 type PostMoreEntriesProps = {
   posts: PostParsed[]
-}
+};
 
 export default function PostMoreEntries({
   posts,
@@ -21,5 +20,5 @@ export default function PostMoreEntries({
         ))}
       </div>
     </section>
-  )
+  );
 }

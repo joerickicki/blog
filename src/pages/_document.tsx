@@ -1,19 +1,18 @@
 import Document, {
-  Html,
+  DocumentContext,
   Head,
+  Html,
   Main,
   NextScript,
-  DocumentContext,
-} from 'next/document'
-import { ReactElement } from 'react'
-
-import { GA_TRACKING_ID } from 'services/gtag'
+} from 'next/document';
+import { ReactElement } from 'react';
+import { GA_TRACKING_ID } from 'services/gtag';
 
 export default class MyDocument extends Document {
   // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
   static async getInitialProps(ctx: DocumentContext) {
-    const initialProps = await Document.getInitialProps(ctx)
-    return { ...initialProps }
+    const initialProps = await Document.getInitialProps(ctx);
+    return { ...initialProps };
   }
 
   render(): ReactElement {
@@ -45,6 +44,6 @@ export default class MyDocument extends Document {
           <NextScript />
         </body>
       </Html>
-    )
+    );
   }
 }

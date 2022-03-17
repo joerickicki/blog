@@ -1,7 +1,7 @@
-import Navigation from 'components/elements/Navigation/Navigation'
-import Container from 'components/foundations/PageContainer/PageContainer'
-import Link from 'next/link'
-import { ReactElement } from 'react'
+import Navigation from 'components/elements/Navigation/Navigation';
+import Container from 'components/foundations/PageContainer/PageContainer';
+import Link from 'next/link';
+import { ReactElement } from 'react';
 
 export default function Header(): ReactElement {
   return (
@@ -13,5 +13,5 @@ export default function Header(): ReactElement {
         <Navigation />
       </header>
     </Container>
-  )
+  );
 }

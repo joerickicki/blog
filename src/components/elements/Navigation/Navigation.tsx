@@ -1,5 +1,5 @@
-import Link from 'next/link'
-import { ReactElement } from 'react'
+import Link from 'next/link';
+import { ReactElement } from 'react';
 
 export default function Navigation(): ReactElement {
   return (
@@ -16,5 +16,5 @@ export default function Navigation(): ReactElement {
         </li>
       </ul>
     </nav>
-  )
+  );
 }

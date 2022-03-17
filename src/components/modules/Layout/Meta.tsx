@@ -1,5 +1,5 @@
-import Head from 'next/head'
-import { ReactElement } from 'react'
+import Head from 'next/head';
+import { ReactElement } from 'react';
 
 export default function Meta(): ReactElement {
   return (
@@ -40,5 +40,5 @@ export default function Meta(): ReactElement {
       <meta name="theme-color" content="#000" />
       <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
     </Head>
-  )
+  );
 }

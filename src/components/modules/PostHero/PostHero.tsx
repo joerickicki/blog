@@ -1,12 +1,12 @@
-import Link from 'next/link'
-import DateFormat from 'components/foundations/DateFormat/DateFormat'
-import PostCoverImage from 'components/elements/PostCoverImage/PostCoverImage'
-import { ReactElement } from 'react'
-import { PostParsed } from 'services/contentful/post/postParser'
+import PostCoverImage from 'components/elements/PostCoverImage/PostCoverImage';
+import DateFormat from 'components/foundations/DateFormat/DateFormat';
+import Link from 'next/link';
+import { ReactElement } from 'react';
+import { PostParsed } from 'services/contentful/post/postParser';
 
 type PostHeroProps = {
   post: PostParsed
-}
+};
 
 export default function PostHero({ post }: PostHeroProps): ReactElement {
   return (
@@ -30,5 +30,5 @@ export default function PostHero({ post }: PostHeroProps): ReactElement {
         </div>
       </div>
     </section>
-  )
+  );
 }

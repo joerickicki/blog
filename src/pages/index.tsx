@@ -1,3 +1,3 @@
-import HomeTemplate from 'components/templates/HomeTemplate/HomeTemplate'
+import HomeTemplate from 'components/templates/HomeTemplate/HomeTemplate';
 
-export default HomeTemplate
+export default HomeTemplate;

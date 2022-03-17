@@ -1,5 +1,5 @@
-import getPostEntries from './getPostEntries'
-import { PostParsed } from './postParser'
+import getPostEntries from './getPostEntries';
+import { PostParsed } from './postParser';
 
 export default async function getPreviewPostBySlug(
   slug: string,
@@ -10,7 +10,7 @@ export default async function getPreviewPostBySlug(
       limit: 1,
       'fields.slug[in]': slug,
     },
-  })
+  });
 
-  return entry
+  return entry;
 }

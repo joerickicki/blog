@@ -1,11 +1,11 @@
-import cn from 'classnames'
-import Link from 'next/link'
-import { ReactElement } from 'react'
-import { PostParsed } from 'services/contentful/post/postParser'
+import cn from 'classnames';
+import Link from 'next/link';
+import { ReactElement } from 'react';
+import { PostParsed } from 'services/contentful/post/postParser';
 
 type CoverImageProps = {
   post: PostParsed
-}
+};
 export default function CoverImage({ post }: CoverImageProps): ReactElement {
   const image = (
     <img
@@ -15,7 +15,7 @@ export default function CoverImage({ post }: CoverImageProps): ReactElement {
         'hover:shadow-medium transition-shadow duration-200': !!post.slug,
       })}
     />
-  )
+  );
   return (
     <div className="sm:mx-0">
       {post.slug ? (
@@ -26,5 +26,5 @@ export default function CoverImage({ post }: CoverImageProps): ReactElement {
         image
       )}
     </div>
-  )
+  );
 }

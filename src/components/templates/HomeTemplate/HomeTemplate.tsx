@@ -1,12 +1,11 @@
-import Layout from 'components/modules/Layout/Layout'
-import Head from 'next/head'
-import { ReactElement } from 'react'
-
-import Link from 'next/link'
+import Layout from 'components/modules/Layout/Layout';
+import Head from 'next/head';
+import Link from 'next/link';
+import { ReactElement } from 'react';
 
 type HomeTemplateProps = {
   preview: boolean
-}
+};
 
 export default function HomeTemplate({
   preview,
@@ -15,18 +14,18 @@ export default function HomeTemplate({
     <>
       <Layout preview={preview}>
         <Head>
-          <title>Lorenzo GM</title>
+          <title>Joe Rickicki</title>
         </Head>
 
         <div className="container mx-auto mt-20 flex flex-col justify-center items-center lg:flex-row-reverse lg:px-20 ">
           <img
-            src="/lorenzogm-square.jpg"
-            alt="Lorenzo GM"
+            src="/Orangutan-with-Saw.jpg"
+            alt="Somewhat Primitive Builder"
             className="rounded-full w-48"
           />
           <div className="mt-5 text-center lg:text-left lg:mr-20">
-            <p className="text-4xl">Hello! I&apos;m Lorenzo GM.</p>
-            <p className="text-2xl">I make stuff with code.</p>
+            <p className="text-4xl">Joe Rickicki.</p>
+            <p className="text-2xl">Information.</p>
             <div className="mt-6">
               <Link href="/blog">
                 <a
@@ -41,5 +40,5 @@ export default function HomeTemplate({
         </div>
       </Layout>
     </>
-  )
+  );
 }

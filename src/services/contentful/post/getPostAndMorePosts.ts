@@ -1,5 +1,5 @@
-import getPostEntries from './getPostEntries'
-import { PostParsed } from './postParser'
+import getPostEntries from './getPostEntries';
+import { PostParsed } from './postParser';
 
 export default async function getPostAndMorePosts(
   slug: string,
@@ -11,7 +11,7 @@ export default async function getPostAndMorePosts(
       limit: 1,
       'fields.slug[in]': slug,
     },
-  })
+  });
 
   const entries = await getPostEntries({
     preview,
@@ -20,10 +20,10 @@ export default async function getPostAndMorePosts(
       order: '-fields.date',
       'fields.slug[nin]': slug,
     },
-  })
+  });
 
   return {
     post: entry,
     morePosts: entries,
-  }
+  };
 }

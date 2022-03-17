@@ -1,21 +1,20 @@
-import { ReactElement } from 'react'
-import Head from 'next/head'
-
-import PostMoreEntries from 'components/modules/PostMoreEntries/PostMoreEntries'
-import PostHero from 'components/modules/PostHero/PostHero'
-import Layout from 'components/modules/Layout/Layout'
-import { PostParsed } from 'services/contentful/post/postParser'
+import Layout from 'components/modules/Layout/Layout';
+import PostHero from 'components/modules/PostHero/PostHero';
+import PostMoreEntries from 'components/modules/PostMoreEntries/PostMoreEntries';
+import Head from 'next/head';
+import { ReactElement } from 'react';
+import { PostParsed } from 'services/contentful/post/postParser';
 
 type BlogHomePageProps = {
   preview: boolean
   allPosts: PostParsed[]
-}
+};
 
 export default function BlogHomePage({
   preview,
   allPosts,
 }: BlogHomePageProps): ReactElement {
-  const [postHero, ...postMoreEntries] = allPosts
+  const [postHero, ...postMoreEntries] = allPosts;
 
   return (
     <>
@@ -29,5 +28,5 @@ export default function BlogHomePage({
         )}
       </Layout>
     </>
-  )
+  );
 }
