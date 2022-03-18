@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router';
 import { useEffect } from 'react';
 
-export const GA_TRACKING_ID = 'G-EQ9FVMPX3V';
+export const GA_TRACKING_ID = 'GTM-W4X65MQ';
 
 declare global {
   interface Window {
