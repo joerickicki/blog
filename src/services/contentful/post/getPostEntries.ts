@@ -21,6 +21,8 @@ export default async function getPostEntries({
     preview,
   ).getEntries({
     content_type: 'post',
+    limit: 1,
+    include: 10,
     ...query,
   });
 
