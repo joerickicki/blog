@@ -19,13 +19,13 @@ export default function HomeTemplate({
 
         <div className="container mx-auto mt-20 flex flex-col justify-center items-center lg:flex-row-reverse lg:px-20 ">
           <img
-            src="/Orangutan-with-Saw.jpg"
+            src="/IMG_4664.jpg"
             alt="Somewhat Primitive Builder"
-            className="rounded-full w-48"
+            className="rounded-full w-24"
           />
           <div className="mt-5 text-center lg:text-left lg:mr-20">
-            <p className="text-4xl">Joe Rickicki.</p>
-            <p className="text-2xl">Information2.</p>
+            <p className="text-4xl">Personal Data </p>
+            <p className="text-2xl">Coding, Health, etc.</p>
             <div className="mt-6">
               <Link href="/blog">
                 <a
