@@ -10,7 +10,7 @@ type PostBodyProps = {
 };
 
 const renderOption = {
-  renderNode: {
+  renderNode: {  
     [BLOCKS.EMBEDDED_ASSET](node : Node) {
       return (
         <img
@@ -20,7 +20,23 @@ const renderOption = {
           width={node.data.target.fields.file.details.image.width}
         />
       );
-    }
+    },
+    [BLOCKS.PARAGRAPH](node : Node, children : any) {
+      return ( <span>{children}</span>);
+    },
+    [BLOCKS.UL_LIST](node : Node, children : any) {
+      return (
+        <ul className="list-disc list-inside">{children}</ul>
+      );
+    },
+    [BLOCKS.OL_LIST](node : Node, children : any) {
+      return (
+        <ol className="list-decimal list-inside">{children}</ol>
+      );
+    },
+    [BLOCKS.LIST_ITEM](node : Node, children : any) {
+      return ( <li>{children}</li>);
+    },
   }
 };
 

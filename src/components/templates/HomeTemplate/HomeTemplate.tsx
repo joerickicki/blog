@@ -24,7 +24,7 @@ export default function HomeTemplate({
             className="rounded-full w-24"
           />
           <div className="mt-5 text-center lg:text-left lg:mr-20">
-            <p className="text-4xl">Personal Data </p>
+            <p className="text-4xl">Shared Notes</p>
             <p className="text-2xl">Coding, Health, etc.</p>
             <div className="mt-6">
               <Link href="/blog">
