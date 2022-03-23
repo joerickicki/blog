@@ -22,7 +22,7 @@ const renderOption = {
       );
     },
     [BLOCKS.PARAGRAPH](node : Node, children : any) {
-      return ( <span>{children}</span>);
+      return ( <p>{children}</p>);
     },
     [BLOCKS.UL_LIST](node : Node, children : any) {
       return (
